@@ -60,7 +60,7 @@ int main()
 	}
 
 	Date summer2022;
-	set_date_data(&summer2022, 1000, (team_num)*(team_num-1)/2);
+	set_date_data(&summer2022, 100, (team_num)*(team_num-1)/2);
 	print_date(&summer2022, teams, team_num, 6, 8);
 	system("pause");
 	system("cls");
@@ -82,6 +82,8 @@ int main()
 			}
 		}
 	}
+
+	free(teams);
 }
 
 void input_team_num(int* num)
